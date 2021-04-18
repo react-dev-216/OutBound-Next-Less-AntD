@@ -1,0 +1,82 @@
+@media (min-width: 576px) {
+  .pad, .pad-y, .pad-top { padding-top: 40px; }
+  .pad, .pad-y, .pad-btm { padding-bottom: 40px; }
+  .pad, .pad-x, .pad-left { padding-left: 40px; }
+  .pad, .pad-x, .pad-right { padding-right: 40px; }
+  .ceec-logo-svg svg {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  body { font-size: 1.2em; }
+  .section-header {
+    .ant-row-flex {
+      *:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .products-list {
+    .ant-col > {
+      .ant-list-item {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .product-card {
+    flex-flow: row nowrap;
+    .photo {
+      width: 300px;
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 24px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .menu-trigger {
+    display: none;
+  }
+  .ant-layout-header {
+    padding: 32px 64px;
+    .ant-menu {
+      display: block;
+      border-bottom: 0;
+      .ant-menu-item {
+        > a {
+          color: #fff;
+        }
+      }
+      .ant-menu-item-selected {
+        > a {
+          color: @color-2;
+        }
+      }
+    }
+    .ceec-logo-svg svg {
+      width: 300px;
+    }
+  }
+  .ant-layout-footer {
+    text-align: left;
+    .ceec-logo-svg svg {
+      width: 300px;
+    }
+    .social {
+      justify-content: flex-start;
+    }
+    .wrap > .ant-row-flex {
+      margin: 0 -24px;
+      .ant-col {
+        padding: 0 24px;
+        &:not(:last-child) {
+          border-right: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
